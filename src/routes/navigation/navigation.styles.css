@@ -1,9 +1,9 @@
 .navigation {
   height: 70px;
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin: 18px auto;
 }
 .logo-container {
   height: 100%;
@@ -17,8 +17,56 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 3rem;
+  font-size: 13px;
 }
 .nav-link {
-  padding: 10px 15px;
+  padding: 0px 15px;
   cursor: pointer;
+}
+.nav-link:first-child {
+  margin-right: -2rem;
+}
+
+/* Hamburger menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-bottom,
+.hamburger-middle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translate(0px);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.open .hamburger-middle {
+  display: none;
 }
