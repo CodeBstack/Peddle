@@ -5,7 +5,10 @@ const Blog = () => {
     <div>
       <Outlet />
       <Contact />
-      Blog page
+      <div style={{ color: "white", textAlign: "center", fontSize: "2rem" }}>
+        {" "}
+        Blog page
+      </div>
     </div>
   );
 };

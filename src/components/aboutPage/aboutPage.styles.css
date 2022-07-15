@@ -158,7 +158,6 @@
   justify-content: center;
 }
 
-
 /* MEDIA QUERY */
 @media (max-width: 708px) {
   .about-page-container {
@@ -169,7 +168,8 @@
     font-size: 14px;
   }
   .about-page-main {
-    height: 60vh;
+    height: 50vh;
+    width: 90%;
   }
 
   .main-bg {
@@ -182,24 +182,33 @@
     top: 8%;
   }
   .about-page-main p {
-    top: 60%;
+    display: flex;
+    margin-top: -.5rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-page-main p br {
+    display: none;
   }
 
   .about-page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 3rem;
     width: 100%;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 400;
-    left: 60%;
-    top: 25%;
+    text-align: center;
   }
 
+  /* METRICK QUOTE */
   .metricks-section {
-    /* margin: 0 auto; */
     height: 20vh;
     width: 90%;
     font-size: 14px;
-    text-align: center;
   }
   .metricks-section br {
     display: none;
@@ -216,10 +225,7 @@
     width: 90vw;
     display: flex;
     flex-direction: column;
-
     margin: 2rem auto 5rem auto;
-
-    text-align: center;
   }
 
   .elaboration-section br {
@@ -231,14 +237,10 @@
   }
 
   .dots {
-    text-align: left;
+    display: none;
   }
   .dots br {
     display: block;
-  }
-
-  .question-bar {
-    /* height: 30vh; */
   }
   .contact-area {
     font-size: 80%;

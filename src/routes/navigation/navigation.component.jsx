@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 import { Outlet, Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
+
 
 import "./navigation.styles.css";
 
@@ -33,7 +35,7 @@ const Navigation = () => {
           className="logo-container"
           to="/"
         >
-          Logo
+          <img src={logo} alt="logo" />
         </Link>
         <div className="nav-links-container hidden-nav">
           <button onClick={onHandleNavToggleClose} className="btn--close-nav">
