@@ -10,7 +10,7 @@
   height: 100%;
   width: 70px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .nav-links-container {
@@ -92,7 +92,7 @@
     right: 0%;
 
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     font-size: 18px;
     flex-direction: column;
     justify-content: center;

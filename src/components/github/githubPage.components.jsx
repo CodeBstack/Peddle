@@ -1,29 +1,23 @@
+import { useEffect, useState } from "react";
+import RepoList from "../repo-list/repo-list.components";
+
 import "./githubPage.styles.css";
 
 const GithubPage = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch(
+      "https://api.github.com/search/repositories?q=created:>2021-08-13&sort=stars&order=desc"
+    )
+      .then((response) => response.json())
+      .then((users) => setData(users.items));
+  }, []);
+
   return (
     <div className="github-container">
-      <div className="item">
-        <div className="image">
-          <img
-            src="https://avatars.githubusercontent.com/u/16789300?v=4"
-            alt="user-avatar"
-          />
-        </div>
-
-        <div className="text__area">
-          <h2>Tensorflow</h2>
-          <p>
-            An Opne source machine learning framework for everyone
-            https://tensorflow.org
-          </p>
-          <div className="acct-activities">
-            <p className="stars">Stars: 118k</p>
-            <p className="issues">Issues: 1.6k</p>
-            <p>Submitted 30 days ago by tensorflow</p>
-          </div>
-        </div>
-      </div>
+      {data.map((eachData) => {
+       return <RepoList key={eachData.id} data={eachData} />;
+      })}
     </div>
   );
 };
