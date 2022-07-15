@@ -18,6 +18,7 @@ const AboutPage = () => {
     contactCont.classList.remove("hidden");
     navLinkContainer.classList.add("hidden-nav");
   };
+  
   return (
     <div className=" about-page-container">
       <div className="main-bg"></div>
@@ -29,7 +30,7 @@ const AboutPage = () => {
         </h1>
         <p>
           Our tools are easy to use with a user <br />
-          friendlt dashboard that enables you to set up, <br /> launch, automate
+          friendly dashboard that enables you to set up, <br /> launch, automate
           and manage multi-affliate <br /> campaigns in 5 minutes.
         </p>
       </div>

@@ -5,6 +5,7 @@ import "./githubPage.styles.css";
 
 const GithubPage = () => {
   const [data, setData] = useState([]);
+  
   useEffect(() => {
     fetch(
       "https://api.github.com/search/repositories?q=created:>2021-08-13&sort=stars&order=desc"

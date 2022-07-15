@@ -109,7 +109,8 @@
   }
 
   .logo-container {
-    flex-basis: 20%;
+    margin-top: .6rem;
+    /* flex-basis: 20%; */
   }
   .hamburger {
     display: block;

@@ -1,10 +1,16 @@
 import "./repo-list.styles.css";
 
 const RepoList = ({ data }) => {
-  console.log(data);
+  // console.log(data);
 
   const { owner, name, description, stargazers_count, open_issues_count } =
     data;
+
+  const formatK = (num) => {
+    return Math.abs(num) >= 1000
+      ? (Math.abs(num) / 1000).toFixed(1) + "k"
+      : Math.abs(num);
+  };
 
   return (
     <div className="item">
@@ -16,8 +22,8 @@ const RepoList = ({ data }) => {
         <h2>{name}</h2>
         <p>{description}</p>
         <div className="acct-activities">
-          <p className="stars">Stars: {stargazers_count}</p>
-          <p className="issues">Issues: {open_issues_count}</p>
+          <p className="stars">Stars: {formatK(stargazers_count)}</p>
+          <p className="issues">Issues: {formatK(open_issues_count)}</p>
           <p>Submitted 30 days ago by {name}</p>
         </div>
       </div>
