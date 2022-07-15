@@ -1,0 +1,247 @@
+.about-page-container {
+  color: #fff;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.about-page-container p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.7;
+}
+
+.about-page-main {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  margin: 0 auto;
+  height: 90vh;
+  width: 80vw;
+  position: relative;
+}
+
+.main-bg {
+  /* bottom: -10rem; */
+  position: absolute;
+  background-color: #311254;
+  border: transparent;
+  top: 20;
+  left: 0;
+  border-radius: 10px;
+  width: 50vw;
+  height: 80vh;
+  filter: blur(4px);
+  border-bottom: 0;
+}
+.about-page-main h5 {
+  position: absolute;
+  top: 16%;
+  left: 20%;
+  font-weight: 400;
+}
+
+.about-page-main h5::before {
+  content: "";
+  display: inline-block;
+  min-width: 3rem;
+  min-height: 1px;
+  background-color: grey;
+  margin-right: 4px;
+  margin-bottom: 2px;
+}
+
+.about-page-heading {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.about-page-main p {
+  position: absolute;
+  top: 70%;
+  right: 0;
+}
+
+/* METRICKS SECTION */
+.metricks-section {
+  height: 20vh;
+  width: 80vw;
+  font-size: 1.1rem;
+  margin: 2rem auto;
+}
+
+.metricks-section h2 {
+  font-weight: 400;
+}
+
+.metricks-section strong {
+  font-weight: 600;
+}
+
+/* ELABORATION SECTION */
+.elaboration-section {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto 5rem auto;
+}
+
+.right-area {
+  margin-top: 2rem;
+}
+.dots {
+  letter-spacing: 10px;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+.elaboration-section span {
+  font-size: 15px;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.elaboration-section span::after {
+  content: "";
+  display: block;
+  min-width: 4rem;
+  min-height: 1px;
+  background-color: grey;
+  margin-right: 4px;
+  margin-bottom: 2px;
+}
+
+/* CONTACT SECTION */
+.question-bar {
+  background-color: #291346;
+  height: 40vh;
+  width: 100%;
+  /* padding: 3rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.contact-area {
+  flex-basis: 60%;
+  margin-left: 5rem;
+}
+
+.contact-area h2 {
+  font-weight: 400;
+}
+
+.contact-area button {
+  background: none;
+  border: none;
+  outline: none;
+  color: #b906bd;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* FOOTER */
+.about-page-container .footer p {
+  font-size: 11px;
+  font-weight: 100;
+}
+
+.about-page-container .copyright {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 708px) {
+  .about-page-container {
+    width: 100%;
+  }
+
+  .about-page-container p {
+    font-size: 14px;
+  }
+  .about-page-main {
+    height: 60vh;
+  }
+
+  .main-bg {
+    display: none;
+  }
+
+  .about-page-main h5 {
+    font-size: 11px;
+    left: 0;
+    top: 8%;
+  }
+  .about-page-main p {
+    top: 60%;
+  }
+
+  .about-page-heading {
+    margin-top: 3rem;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    left: 60%;
+    top: 25%;
+  }
+
+  .metricks-section {
+    /* margin: 0 auto; */
+    height: 20vh;
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .metricks-section br {
+    display: none;
+  }
+  .metricks-section h2 {
+    font-weight: 200;
+  }
+  .metricks-section strong {
+    font-weight: 400;
+  }
+
+  /* ELABORATE SECTION */
+  .elaboration-section {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem auto 5rem auto;
+
+    text-align: center;
+  }
+
+  .elaboration-section br {
+    display: none;
+  }
+
+  .elaboration-section h3 {
+    text-align: left;
+  }
+
+  .dots {
+    text-align: left;
+  }
+  .dots br {
+    display: block;
+  }
+
+  .question-bar {
+    /* height: 30vh; */
+  }
+  .contact-area {
+    font-size: 80%;
+    margin-left: 2rem;
+  }
+}

@@ -60,6 +60,8 @@ const Directory = () => {
           </button>
         </div>
       </div>
+
+      
       <footer className="footer">
         <div className="socials">
           <img className="social-icons" src={youtube} alt="youtube" />
@@ -76,6 +78,9 @@ const Directory = () => {
           <p>Copyright 2021 &#64; Peddle Technologies. All Rights Reserved</p>
         </div>
       </footer>
+
+      {/* <div className="footer-bg"></div> */}
+
     </div>
   );
 };

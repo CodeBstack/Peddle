@@ -4,14 +4,14 @@ const Contact = () => {
   const onHandleToggle = () => {
     const contactCont = document.querySelector(".contact-container");
     const overlay = document.querySelector(".overlay");
-
+ 
     overlay.classList.add("hidden");
     contactCont.classList.add("hidden");
   };
 
   return (
-    <div className="contact-container ">
-      <button onClick={onHandleToggle} class="btn--close-modal">
+    <div className="contact-container hidden">
+      <button onClick={onHandleToggle} className="btn--close-modal">
         &rarr;
       </button>
 

@@ -4,48 +4,75 @@ import { Outlet, Link } from "react-router-dom";
 import "./navigation.styles.css";
 
 const Navigation = () => {
-  const btn = document.getElementById("menu-btn");
-  const nav = document.getElementById("menu");
-
-  // btn.addEventListener("click", () => {
-  //   btn.classList.toggle("open");
-  //   nav.classList.toggle("flex");
-  //   nav.classList.toggle("hidden");
-  // });
-
-  const onHandleToggle = () => {
+  const onHandleContactToggle = () => {
     const contactCont = document.querySelector(".contact-container");
     const overlay = document.querySelector(".overlay");
+    const navLinkContainer = document.querySelector(".nav-links-container");
 
-    overlay.classList.remove('hidden')
+    overlay.classList.remove("hidden");
     contactCont.classList.remove("hidden");
+    navLinkContainer.classList.add("hidden-nav");
+  };
+
+  const onHandleNavToggleClose = () => {
+    const navLinkContainer = document.querySelector(".nav-links-container");
+    navLinkContainer.classList.add("hidden-nav");
+  };
+
+  const onHandleNavToggleOpen = () => {
+    const navLinkContainer = document.querySelector(".nav-links-container");
+    navLinkContainer.classList.remove("hidden-nav");
+    // console.log("good");
   };
 
   return (
     <Fragment>
       <div className="navigation">
-        <Link className="logo-container" to="/">
+        <Link
+          onClick={onHandleNavToggleClose}
+          className="logo-container"
+          to="/"
+        >
           Logo
         </Link>
-        <div className="nav-links-container">
-          <Link className="nav-link" to="/about">
+        <div className="nav-links-container hidden-nav">
+          <button onClick={onHandleNavToggleClose} className="btn--close-nav">
+            &times;
+          </button>
+          <Link
+            onClick={onHandleNavToggleClose}
+            className="nav-link"
+            to="/about"
+          >
             About Us
           </Link>
+          <Link
+            onClick={onHandleNavToggleClose}
+            className="nav-link"
+            to="/github"
+          >
+            Github
+          </Link>
 
-          <Link className="nav-link" to="/blog   ">
+          <Link
+            onClick={onHandleNavToggleClose}
+            className="nav-link"
+            to="/blog   "
+          >
             Blog
           </Link>
 
-          <button onClick={onHandleToggle} className="btn nav-link">
+          <button onClick={onHandleContactToggle} className="btn nav-link">
             <p>Contact Us</p>
           </button>
-          <div className="overlay"></div>
-          {/* <button id="menu-btn" class="hamburger">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button> */}
+
+          <div className="overlay hidden"></div>
         </div>
+        <button onClick={onHandleNavToggleOpen} className="hamburger">
+          <span className="hamburger-top"></span>
+          <span className="hamburger-middle"></span>
+          <span className="hamburger-bottom"></span>
+        </button>
       </div>
       <Outlet />
     </Fragment>
