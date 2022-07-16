@@ -84,17 +84,7 @@ textarea {
   background: #fff;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
-  z-index: 100;
-  transition: all 0.5s;
-}
+
 
 .hidden {
   visibility: hidden;
@@ -111,6 +101,10 @@ textarea {
     width: 100vw;
     min-height: 100vh;
     background-size: contain;
+  }
+
+  .contact-heading br{
+    display: none;
   }
 
   .btn--close-modal {

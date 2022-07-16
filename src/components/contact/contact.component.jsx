@@ -13,6 +13,7 @@ const Contact = () => {
     <div className="contact-container hidden">
       <button onClick={onHandleToggle} className="btn--close-modal">
         &rarr;
+        
       </button>
 
       <h2 className="contact-heading">
