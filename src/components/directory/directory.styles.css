@@ -10,12 +10,13 @@
   height: 100vh;
 }
 
+/* THE HEADER */
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2rem;
   margin-bottom: 7rem;
+  font-weight: 300;
 }
 
 .main h1 {
@@ -23,6 +24,7 @@
   font-size: 35px;
 }
 
+/* COUNTDOWN */
 .countdown {
   display: flex;
   justify-content: center;
@@ -47,6 +49,7 @@
   border-bottom-right-radius: 0;
 }
 
+/* FORM INPUTS */
 .form {
   display: flex;
   gap: 1rem;
@@ -133,6 +136,7 @@
   border-bottom: 0;
 } */
 
+/* FOOTER SECTION */
 .footer {
   font-weight: 100;
   margin: 0;
@@ -157,12 +161,15 @@
   display: flex;
   justify-content: center;
   gap: 2.5rem;
+  cursor: pointer;
 }
 
 .copyright {
   margin-top: -1rem;
 }
 
+
+/* MEDIA QUERY */
 @media (max-width: 576px) {
   .directory-container {
     width: 90%;
@@ -199,8 +206,7 @@
   }
 
   .wait-list {
-    height: 2.5rem;
-    /* margin: 0; */
+    width: 100%;
   }
 
   .email-input {

@@ -1,6 +1,8 @@
 import "./contact.styles.css";
 
 const Contact = () => {
+
+  // handles the opening and closing of the contact menu.
   const onHandleToggle = () => {
     const contactCont = document.querySelector(".contact-container");
     const overlay = document.querySelector(".overlay");

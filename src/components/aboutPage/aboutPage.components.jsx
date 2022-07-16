@@ -7,6 +7,9 @@ import twitter from "../../assets/twitter.png";
 import "./aboutPage.styles.css";
 
 const AboutPage = () => {
+
+  // function that handles the contact open and close.
+  // and scrolls the about page to top.
   const onHandleContactToggle = () => {
     const contactCont = document.querySelector(".contact-container");
     const overlay = document.querySelector(".overlay");
@@ -19,6 +22,7 @@ const AboutPage = () => {
     navLinkContainer.classList.add("hidden-nav");
   };
   
+
   return (
     <div className=" about-page-container">
       <div className="main-bg"></div>

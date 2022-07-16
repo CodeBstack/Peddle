@@ -1,3 +1,4 @@
+/* MAIN ITEM */
 .item {
   width: 85%;
   margin: 0 auto;
@@ -36,6 +37,7 @@
   border-radius: 3px;
 }
 
+/* TEXT AREA */
 .text__area {
   flex-basis: 75%;
   display: flex;
@@ -63,6 +65,7 @@
   font-size: 11px;
 }
 
+/* MEDIA QUERY */
 @media (max-width: 576px) {
   .item {
     gap: 1rem;

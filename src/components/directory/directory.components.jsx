@@ -7,6 +7,7 @@ import twitter from "../../assets/twitter.png";
 import "./directory.styles.css";
 
 const Directory = () => {
+  // This Directory function is the main component which makes up the coming soon page
   return (
     <div className="directory-container">
       <div className="main">
