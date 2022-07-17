@@ -42,7 +42,7 @@ const AboutPage = () => {
       <div className="metricks-section">
         <h2>
           Metricks was developed because just like <br /> you, we needed a
-          product that could give <br /> us <strong>good value</strong>
+          product that could give <br /> us <strong>good value.</strong>
         </h2>
       </div>
 

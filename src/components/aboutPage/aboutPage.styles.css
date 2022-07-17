@@ -129,7 +129,7 @@
 }
 
 .contact-area {
-  flex-basis: 60%;
+  flex-basis: 70%;
   margin-left: 5rem;
 }
 
@@ -183,7 +183,7 @@
   }
   .about-page-main p {
     display: flex;
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
     justify-content: center;
     text-align: center;
     width: 100%;

@@ -80,7 +80,7 @@ const Directory = () => {
         </div>
       </footer>
 
-      {/* <div className="footer-bg"></div> */}
+      <div className="footer-bg"></div>
 
     </div>
   );

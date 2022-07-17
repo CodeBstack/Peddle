@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import { Outlet, Link } from "react-router-dom";
 import logo from "../../assets/metricks-logo.png";
 
-
 import "./navigation.styles.css";
 
 const Navigation = () => {
@@ -10,49 +9,51 @@ const Navigation = () => {
   const onHandleContactToggle = () => {
     const contactCont = document.querySelector(".contact-container");
     const overlay = document.querySelector(".overlay");
-    const navLinkContainer = document.querySelector(".nav-links-container");
 
     overlay.classList.remove("hidden");
     contactCont.classList.remove("hidden");
-    navLinkContainer.classList.add("hidden-nav");
+
+    onHandleCloseNavOnLinkClick();
   };
 
-  // Handles closing of the nav container on smaller screens.
-  const onHandleNavToggleClose = () => {
+  // This runs whenever any of the links are clicked to close the nav conatainer.
+  const onHandleCloseNavOnLinkClick = () => {
     const navLinkContainer = document.querySelector(".nav-links-container");
-    navLinkContainer.classList.add("hidden-nav");
+
+    if (!navLinkContainer.classList.contains("hidden-nav")) {
+      navLinkContainer.classList.toggle("hidden-nav");
+      document.querySelector(".hamburger").classList.toggle("open");
+    }
   };
 
-  // Handles opening of the nav container.
-  const onHandleNavToggleOpen = () => {
+  // Handles closing and opening of the nav container on smaller screens.
+  const onHandleNavToggle = () => {
+    document.querySelector(".hamburger").classList.toggle("open");
+
     const navLinkContainer = document.querySelector(".nav-links-container");
-    navLinkContainer.classList.remove("hidden-nav");
-    // console.log("good");
+    navLinkContainer.classList.toggle("hidden-nav");
   };
 
   return (
     <Fragment>
       <div className="navigation">
         <Link
-          onClick={onHandleNavToggleClose}
+          onClick={onHandleCloseNavOnLinkClick}
           className="logo-container"
           to="/"
         >
           <img src={logo} alt="logo" />
         </Link>
         <div className="nav-links-container hidden-nav">
-          <button onClick={onHandleNavToggleClose} className="btn--close-nav">
-            &times;
-          </button>
           <Link
-            onClick={onHandleNavToggleClose}
+            onClick={onHandleCloseNavOnLinkClick}
             className="nav-link"
             to="/about"
           >
             About Us
           </Link>
           <Link
-            onClick={onHandleNavToggleClose}
+            onClick={onHandleCloseNavOnLinkClick}
             className="nav-link"
             to="/github"
           >
@@ -60,7 +61,7 @@ const Navigation = () => {
           </Link>
 
           <Link
-            onClick={onHandleNavToggleClose}
+            onClick={onHandleCloseNavOnLinkClick}
             className="nav-link"
             to="/blog   "
           >
@@ -75,7 +76,7 @@ const Navigation = () => {
         </div>
 
         {/* Hamburger button */}
-        <button onClick={onHandleNavToggleOpen} className="hamburger">
+        <button onClick={onHandleNavToggle} className="hamburger">
           <span className="hamburger-top"></span>
           <span className="hamburger-middle"></span>
           <span className="hamburger-bottom"></span>

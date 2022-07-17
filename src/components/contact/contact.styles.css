@@ -9,8 +9,9 @@
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.25);
   padding: 0rem 2rem 2rem 2rem;
   z-index: 1000;
-  transition: all 1s;
+  transition: all ease-in-out 0.5s;
   margin-top: -1rem;
+  /* height: 100%; */
 }
 
 .contact-heading {
@@ -84,8 +85,6 @@ textarea {
   background: #fff;
 }
 
-
-
 .hidden {
   visibility: hidden;
   opacity: 0;
@@ -98,12 +97,13 @@ textarea {
 
 @media (max-width: 720px) {
   .contact-container {
+    position: fixed;
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background-size: contain;
   }
 
-  .contact-heading br{
+  .contact-heading br {
     display: none;
   }
 
