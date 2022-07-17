@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * Click on the logo to return back to the homepage.
 
-* Click on the Contact Us button to open the contact bar, close it with the arrow button shown on the contact page.
+* Click on the Contact Us button to open the contact bar, close it with the arrow button shown on the contact layout.
 
 
 <!-- ## Application improvements
