@@ -1,4 +1,4 @@
-# Details and specificton of the application.
+# Details and specification of the application.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -21,5 +21,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Click on the Contact Us button to open the contact bar, close it with the arrow button shown on the contact page.
 
 
-## Application improvements
-* 
+<!-- ## Application improvements
+*  -->
