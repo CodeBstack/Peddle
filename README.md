@@ -12,13 +12,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Guide on how to run the application.
 
-- Start the application by clicking this 👉 [Peddle-frontend-assessment](https://peddle-frontend-assessment.netlify.app)
+- Start the application by clicking here 👉 [Peddle-frontend-assessment](https://peddle-frontend-assessment.netlify.app)
 
 * Click on the navigation links to navigate to other routes or pages respectively.
 
 * Click on the logo to return back to the homepage.
 
-* Click on the Contact Us button to open the contact bar, close it with the arrow button shown on the contact page.
+* Click on the Contact Us button to open the contact bar, close it with the arrow button shown on the contact layout.
 
 
 <!-- ## Application improvements
