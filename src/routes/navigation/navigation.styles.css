@@ -78,7 +78,7 @@
 }
 
 .open {
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
   transform: translateY(0px);
 }
 
@@ -94,7 +94,7 @@
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .navigation {
     display: flex;
   }

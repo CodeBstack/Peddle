@@ -5,8 +5,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #14012f;
-  /* position: relative; */
   overflow-x: hidden;
+}
+
+html,
+body,
+#root {
+    height: 100%;
 }
 
 code {

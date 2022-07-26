@@ -10,8 +10,6 @@
   padding: 0rem 2rem 2rem 2rem;
   z-index: 1000;
   transition: all ease-in-out 0.5s;
-  margin-top: -1rem;
-  /* height: 100%; */
 }
 
 .contact-heading {
@@ -95,14 +93,18 @@ textarea {
   flex-direction: column;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 650px) {
   .contact-container {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     background-size: contain;
+    /* font-size: 40%; */
   }
 
+  textarea {
+    min-height: 6rem;
+  }
   .contact-heading br {
     display: none;
   }
